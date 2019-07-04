@@ -1,4 +1,5 @@
 <h3>solution1. 정확성O/효율성X</h3>
+
 ```python
 def solution(participant, completion):
     for i in completion:
@@ -8,6 +9,7 @@ def solution(participant, completion):
 ```
     
 <h3>solution2. 효율성/정확성 OK</h3>
+
 ```python
 def solution(participant, completion):
     participant.sort()
