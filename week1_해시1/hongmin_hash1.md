@@ -8,7 +8,7 @@ def solution(participant, completion):
     return participant[0]
 ```
     
-<h3>solution2. 효율성/정확성 OK</h3>
+<h3>solution2. 효율성O/정확성O</h3>
 
 ```python
 def solution(participant, completion):
