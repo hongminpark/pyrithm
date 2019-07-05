@@ -5,6 +5,9 @@ def solution(participant, completion):
         if participant[i] != completion[i]:
             return participant[i]
     return participant[len(participant) - 1]
+
+
+
     """
     if len(participant) > 100000 or len(participant) < 1:
         print("!!!마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.")
@@ -43,4 +46,4 @@ def solution(participant, completion):
                 for j in range(len(participant)):
                     if participant[j] != "999":
                         return participant[j]
-        """
+    """
