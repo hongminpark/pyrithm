@@ -1,3 +1,9 @@
+"""
+동명이인 없을 경우, set 함수를 통해 count 할 필요 없이 바로 return해서 효율성 향상.
+*set: 중복 제거
+"""
+
+
 #!/usr/bin/env python
 # coding: utf-8
 
