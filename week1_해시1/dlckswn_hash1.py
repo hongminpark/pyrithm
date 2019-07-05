@@ -1,3 +1,6 @@
+"""처음에 정렬을 해서 참여자랑 완주자가 전부 정렬된 상태니까.
+for문을 다돌고 return을 못했을 경우에만 마지막 return을 타게되는것!"""
+
 def solution(participant, completion):
     participant.sort()
     completion.sort()   # 홍민 소스 참고 -> 정확성, 효율성 모두 통과
