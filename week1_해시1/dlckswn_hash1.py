@@ -1,4 +1,11 @@
 def solution(participant, completion):
+    participant.sort()
+    completion.sort()   # 홍민 소스 참고 -> 정확성, 효율성 모두 통과
+    for i in range(len(completion)):
+        if participant[i] != completion[i]:
+            return participant[i]
+    return participant[len(participant) - 1]
+    """
     if len(participant) > 100000 or len(participant) < 1:
         print("!!!마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.")
         return
@@ -17,7 +24,6 @@ def solution(participant, completion):
                         for k in range(len(participant)):
                             if participant[k] != "0":
                                 return participant[k]
-        """
         for i in range(len(completion)):
             if participant[0] == completion[i]:
                 if len(completion) > 1:
