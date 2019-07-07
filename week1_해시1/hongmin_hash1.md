@@ -9,8 +9,8 @@ def solution(participant, completion):
 ```
 > 효율성 0 why ?:  remove() 시간복잡도 n <br>
 (For 루프) * (remove) = > n *n의 시간복잡도  <br>
-- 리스트에서 아이템 바로 삭제: remove <br>
-- 리스트에서 인덱스로 삭제: pop <br>
+-리스트에서 아이템 바로 삭제: remove <br>
+-리스트에서 인덱스로 삭제: pop <br>
 (REMOVE는 시간복잡도 N이고 POP은 1)<br>
 
 
