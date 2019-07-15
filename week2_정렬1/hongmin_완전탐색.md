@@ -1,4 +1,6 @@
-{% python %}
+<h3>solution1</h3>
+
+```python
 def solution(answers):
     count = [0, 0, 0]
     result = []
@@ -49,3 +51,10 @@ def ans_3(idx):
         return 4
     else:
         return 5
+```
+
+> 
+
+
+
+
