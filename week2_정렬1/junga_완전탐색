@@ -1,0 +1,43 @@
+def solution(answers):
+    
+    a = [1,2,3,4,5]
+    b = [2,1,2,3,2,4,2,5]
+    c = [3,3,1,1,2,2,4,4,5,5]
+    
+    //answer랑 길이 맞추기
+    if len(answers) > len(a):
+        x, y = divmod(len(answers), len(a))
+        if y > 0:
+            a = (a*(x+1))[0:len(answers)]
+        else:
+            a = a*x
+    else:
+        a = a[0:len(answers)]
+        
+    if len(answers) > len(b):
+        x, y = divmod(len(answers), len(b))
+        if y > 0:
+            b = (b*(x+1))[0:len(answers)]
+        else:
+            b = b*x
+    else:
+        b = b[0:len(answers)]
+        
+    if len(answers) > len(c):
+        x, y = divmod(len(answers), len(c))
+        if y > 0:
+            c = (c*(x+1))[0:len(answers)]
+        else:
+            c = c*x
+    else:
+        c = c[0:len(answers)]
+    
+    //같은 index의 같은 값 찾기
+    v1 = [x for x,y in zip(a,answers) if x==y]
+    v2 = [x for x,y in zip(b,answers) if x==y]
+    v3 = [x for x,y in zip(c,answers) if x==y]
+
+    dic = {1: len(v1), 2: len(v2), 3: len(v3)}
+    dic = [k for k in dic.keys() if dic[k] == max(dic.values())]
+            
+    return dic
