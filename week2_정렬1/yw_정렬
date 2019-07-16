@@ -1,0 +1,9 @@
+def solution(array, commands):
+    answer = []
+    
+    for i in commands:
+        cutarr = array[i[0]-1:i[1]]
+        cutarr.sort()
+        answer.append(cutarr[i[2]-1])
+        
+    return answer
